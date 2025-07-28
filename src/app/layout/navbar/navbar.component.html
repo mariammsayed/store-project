@@ -1,0 +1,20 @@
+<nav class="bg-white border-gray-200 dark:bg-gray-900 px-4 py-2">
+  <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto">
+    <a href="#" class="flex items-center space-x-3">
+      <span class="text-2xl font-bold dark:text-white" routerLink="/home">Store</span>
+    </a>
+    <div class="flex items-center space-x-4">
+      <!-- Toggle Dark Mode -->
+      <label class="inline-flex items-center cursor-pointer">
+        <input type="checkbox" class="sr-only peer" (change)="toggleDarkMode()">
+        <div
+          class="w-11 h-6 bg-gray-200 dark:bg-gray-700 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 rounded-full peer peer-checked:bg-blue-600 relative transition-colors">
+          <div
+            class="absolute top-[2px] left-[2px] w-5 h-5 bg-white rounded-full transition-transform peer-checked:translate-x-full">
+          </div>
+        </div>
+        <span class="ml-3 text-sm font-medium text-gray-900 dark:text-gray-300">Dark Mode</span>
+      </label>
+    </div>
+  </div>
+</nav>
